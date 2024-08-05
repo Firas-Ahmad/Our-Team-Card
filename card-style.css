@@ -1,0 +1,140 @@
+section {
+    border: 15px;
+    border-color: rgb(83, 134, 207);
+    border-style: solid;
+    height: 95vh;
+    
+}
+
+.Shared-between-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.title-div {
+    color: rgb(66, 109, 238);
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.div-card {
+    width: 300px;
+    height: 400px;
+    background-color: rgb(246, 243, 232);
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.div-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.div-card:hover img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(246, 243, 232);
+    border-width: 8px;
+}
+
+.div-card:hover .border-img {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(66, 109, 231);
+    border-width: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition:ease-in-out;
+    
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 5;
+
+}
+
+.border-img {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border-width: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+
+.foter-div {
+    display: none;
+}
+
+.icons-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    color: white;
+}
+
+.div-card:hover .foter-div {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgb(66, 109, 232);
+}
+
+.div-card:hover .foter-div:hover .icons-div:hover {
+    background-color: white;
+    color: rgb(66, 109, 232);
+}
+
+.div-card:hover .div-overflow {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.5;
+    top: -250px;
+    left: -50px;
+}
+.div-overflow {
+    width: 400px;
+    height: 400px;
+    display: none;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.5;
+    top: -250px;
+    left: -50px;
+}
